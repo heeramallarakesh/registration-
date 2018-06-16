@@ -1,0 +1,80 @@
+<html>
+<head> <h1>Form</h1>
+	<script>
+		function list(){
+			for(i=1;i<=500;i++)
+			{
+				var x = document.getElementById("lstItem");
+				var option=document.createElement("option");
+				option.text=i;
+				x.add(option);
+			}
+		}
+	</script>
+</head>
+<body> 
+<form> 
+<div><b><table border="1">
+Name:
+<input type="text" placeholder="example: raj" id="txtName" required><br>
+Mobile:
+<input type="text" placeholder="+91-0000000000" id="Mobile" required><br>
+Email:
+<input type="Email" placeholder="raj@gmail.com" id="Email" required><br>
+password:
+<input type="password" placeholder="password" id="password" required> <br>
+
+comfirm password:
+<input type="password" placeholder="re-enter password" id="Cpassword" required><br>
+
+
+
+<label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label><br>
+	<form>Gender:<br>
+  <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+ <br>
+ Courses joined:<br>
+<input type="checkbox" name="Courses joined" value="Java" checked> Java
+  <input type="checkbox" name="Courses joined" value="PHP"> PHP<br>
+  Upload Doubts:
+  <input type="file" name="document">
+  <br>Starting Date:
+
+  <input type="date">
+Ending Date:
+ <input type="date"><br>
+
+ Min Class Hours:
+<select id="lstItem">
+	
+</select>
+<button type="button" onclick="list()">clickme</button><br>
+City:   
+        <select><option>Hyderabad</option>
+<option>Meerpet</option>
+<option>Dilsuknagar</option>
+<option>Vanasthalipuram</option>
+<option>Abits</option>
+<option>Ananthapoor</option>
+</select>
+
+</form>
+<br>
+Comments:
+<br>
+<br>
+
+<textarea name="body" rows="5" cols="36"></textarea>
+
+<br>
+<button type="submit">Register</button>
+<button type="submit">Cancel</button>
+</table>
+</div>
+</form>
+</body>
+</html>
